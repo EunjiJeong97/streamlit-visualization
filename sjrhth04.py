@@ -6,10 +6,10 @@ import numpy as np
 
 def  plotting_demo():
     
-    uploaded_file = st.file_uploader("Choose a file")
+    #uploaded_file = st.file_uploader("Choose a file")
 
-    money=pd.read_csv(uploaded_file)
-   # money = pd.read_csv("money_data7.csv")
+    #money=pd.read_csv(uploaded_file)
+    money = pd.read_csv("money_data7.csv")
 
     option = st.selectbox(
         'How would you like to choice year ?',
@@ -94,15 +94,15 @@ st.set_page_config(layout="centered")
 with st.form(key ='Form1'):
     with st.sidebar:
         
-        select_language = st.sidebar.radio('What do you want ?', ('line', 'bar', 'pie'))
+        select_language = st.sidebar.radio('What do you want ?', ('금리와 집값', '야구 승률', '다른 데이터 분석'))
         
         
-if select_language =='line':           
+if select_language =='금리와 집값':           
     try:
           plotting_demo()  
     except:      
           pass
 
         
-elif select_language =='bar':
+elif select_language =='야구 승률':
     bar_chart()
