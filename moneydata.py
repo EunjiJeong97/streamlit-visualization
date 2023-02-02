@@ -91,7 +91,7 @@ with st.form(key ='Form1'):
         select_language = st.sidebar.radio('What do you want?', ('금리와 집값', '야구 승률', '다른 데이터 분석'))
                 
 if select_language ==  '금리와 집값':
-    tab1, tab2 = st.tabs.(["📈 Chart", "🗃 Data"])
+    tab1, tab2 = st.tabs(["📈 Chart", "🗃 Data"])
     
     with tab1:
         tab1.subheader("A tab with a chart")
