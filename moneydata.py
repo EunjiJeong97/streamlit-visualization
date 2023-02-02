@@ -68,6 +68,10 @@ def bar_chart():
     st.write('You selected:', option)
 
     df7 = baseball[:][baseball.년도==option2]
+    
+    global bb
+    bb = df7
+    
     x = df7.팀
     y = df7.승률
     
@@ -108,4 +112,4 @@ elif select_language == '야구 승률':
         plotting_demo()
     with tab2:
         tab2.subheader("A tab with a data")
-        st.dataframe(aa)
+        st.dataframe(bb)
