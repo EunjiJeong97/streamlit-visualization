@@ -105,11 +105,11 @@ if select_language ==  '금리와 집값':
         st.dataframe(aa)
         
 elif select_language == '야구 승률':
-        tab1, tab2 = st.tabs(["📈 Chart", "🗃 Data"])
+        tab3, tab4 = st.tabs(["📈 Chart", "🗃 Data"])
     
-    with tab1:
-        tab1.subheader("A tab with a chart")
+    with tab3:
+        tab3.subheader("A tab with a chart")
         plotting_demo()
-    with tab2:
-        tab2.subheader("A tab with a data")
+    with tab4:
+        tab4.subheader("A tab with a data")
         st.dataframe(bb)
